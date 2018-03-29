@@ -1,0 +1,22 @@
+{
+  "name": "diff-drive",
+  "version": "0.0.1",
+  "description": "A diff drive simulator",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ferossgp/super-duper-diff-drive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ferossgp/super-duper-diff-drive/issues"
+  },
+  "homepage": "https://github.com/Ferossgp/super-duper-diff-drive#readme"
+}
