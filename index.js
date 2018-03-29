@@ -12,3 +12,27 @@ function run(options, sensorState, actuator) {
       }
     }
 }
+
+
+function main(){
+    let canvas;
+    let concreteCar;
+    let currentSpeed = 0;
+    const pidOptions = {
+        P: 1,
+        I: 0,
+        D: 0,
+    }
+    const action = (input) =>  {
+        let leftSpeed = currentSpeed + input;
+        let rightSpeed = currentSpeed - input;
+        
+        concreteCar.left.forward(leftSpeed);
+        concreteCar.right.forward(rightSpeed);
+        
+        concreteCar.update();
+        // return "stop" when want to stop car
+        return true;
+    };
+    run(pidOptions, concreteCar.getSensorState, action)
+}
